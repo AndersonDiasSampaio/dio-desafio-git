@@ -36,9 +36,19 @@ public class ExercictandoIfSwitch {
 		if(ferias=="Junho"|| ferias=="Dezembro"||ferias=="Janeiro") {
 			System.out.println("Está de férias");
 		}
+		// agora com Switch
+		switch(ferias){
+			case "Junho":
+			System.out.println("Está de férias");
+			break;
+		case "Dezembro":
+			System.out.println("Está de férias");
+			break;
+		case "Janeiro":
+			System.out.println("Está de férias");
+			break;
+		}
 	}
-	
-	
 	
 
 }
