@@ -47,6 +47,9 @@ public class ExercictandoIfSwitch {
 		case "Janeiro":
 			System.out.println("Está de férias");
 			break;
+		default:
+			System.out.println("Mês inválido");
+
 		}
 	}
 	
