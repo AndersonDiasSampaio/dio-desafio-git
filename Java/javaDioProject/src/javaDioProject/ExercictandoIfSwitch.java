@@ -1,14 +1,18 @@
 package javaDioProject;
 
+import java.math.BigInteger;
+import java.util.Scanner;
+
 public class ExercictandoIfSwitch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int mes;
 		mes = 1;
-		if (mes == 1) {
-			System.out.println("Janeiro");
-		} else if (mes == 2) {
+		boolean teste=true;
+		if (!teste) {
+			System.out.println("Verdade");
+		} else if (mes <= 2) {
 			System.out.println("Fevereiro");
 		} else if (mes == 3) {
 			System.out.println("Março");
@@ -51,6 +55,36 @@ public class ExercictandoIfSwitch {
 			System.out.println("Mês inválido");
 
 		}
+		
+		int[][] numeros = {{4, 9, 8, 5}, {3, 0, 1, 5}, {1, 2, 7, 4}};
+		System.out.print(numeros[1][1]);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		for(int i=0 ; i<n ; i++) {
+			int x = sc.nextInt();
+			double razaoCrescimento=2;
+			for(int c=1; c<x;c++) {
+				razaoCrescimento= razaoCrescimento*2;
+			}
+			 long z=  (long) ((razaoCrescimento/12)/1000);
+			
+			System.out.print(z);   //Complete o código aqui.
+		}
+	
+		for(int i=0 ; i<n ; i++) {
+			int x = sc.nextInt();
+			double graos = 2;
+			
+			for(int j = 1; j < x; j++){
+			    graos = graos * 2;
+			}
+			
+			double res = ((graos / 12) / 1000);
+			System.out.println((long) res + " kg");   //Complete o código aqui.
+		}
+        
 	}
 	
 
