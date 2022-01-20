@@ -4,7 +4,7 @@ public class No<T> {// nó com tipo generico <T>
 private T conteudo;
 private No<T> proximoNo;
 public No(T conteudo) {
-	this.proximoNo= null;
+	//this.proximoNo= null;
 	this.conteudo = conteudo;
 }
 public T getConteudo() {
